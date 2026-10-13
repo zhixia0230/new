@@ -1,0 +1,65 @@
+{
+  "AST_equality_checks": {
+    "loss_function_extracted_unchanged": true,
+    "radiomap/training/strong_rr.py:matched_step": true,
+    "radiomap/training/strong_rr.py:rr_prediction": true,
+    "radiomap/utils/checkpoint.py:EMA": true
+  },
+  "RR_1250_re_evaluation": {
+    "exactly_matches_original": true,
+    "images_per_repeat": 400,
+    "nfe": 25,
+    "noise_seeds": [
+      1001,
+      1002
+    ],
+    "pixels": 52428800,
+    "raw_rmse": 0.019192126704927724,
+    "sse": 19311.505045349986
+  },
+  "adapted_files": [
+    "radiomap/training/losses.py",
+    "radiomap/training/strong_rr.py",
+    "radiomap/utils/checkpoint.py",
+    "radiomap/utils/config.py"
+  ],
+  "end_to_end_adaptation_retrained": false,
+  "environment": {
+    "cuda": "12.8",
+    "dependencies": {
+      "Pillow": "12.1.1",
+      "PyYAML": "6.0.3",
+      "numpy": "2.4.3",
+      "pytest": "9.0.2",
+      "scipy": "1.17.1"
+    },
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "python": "3.13.12",
+    "torch": "2.11.0+cu128"
+  },
+  "full_cache_regenerated": false,
+  "generator_parameters": 32334657,
+  "original_source_files_verified": 29,
+  "pytest": {
+    "command": "python -B -m pytest -q -p no:cacheprovider",
+    "passed": 13
+  },
+  "test_evaluated": false,
+  "unchanged_copied_files": [
+    "radiomap/data/dataset.py",
+    "radiomap/data/geometry.py",
+    "radiomap/evaluation/evaluate.py",
+    "radiomap/flow/path.py",
+    "radiomap/flow/solver.py",
+    "radiomap/flow/time_sampler.py",
+    "radiomap/models/backbone.py",
+    "radiomap/models/condition_encoder.py",
+    "radiomap/models/risk_head.py",
+    "radiomap/models/system.py",
+    "radiomap/reference/operators.py",
+    "radiomap/training/trainers.py",
+    "radiomap/utils/seed.py"
+  ],
+  "verification_scope": "packaged-code tests and re-evaluation of existing original RR1250 EMA; no new training",
+  "verified_on_session_date": "2026-10-13"
+}

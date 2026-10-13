@@ -1,0 +1,610 @@
+{
+  "bootstrap_repeats": 2000,
+  "bootstrap_unit": "scene",
+  "matched_updates_not_matched_FLOPs": true,
+  "nodes": [
+    {
+      "RR_vs_original": {
+        "helpful_scenes": 49,
+        "per_noise_relative_sse_delta": {
+          "1001": -0.05164672966108052,
+          "1002": -0.047610035124336356
+        },
+        "relative_rmse_delta": -0.02513198739863376,
+        "relative_rmse_scene_bootstrap_95": [
+          -0.028559109217669687,
+          -0.021741510908862116
+        ],
+        "relative_sse_delta": -0.049632358006662346,
+        "scene_bootstrap_95": [
+          -0.05630259571603255,
+          -0.04301032852112402
+        ],
+        "scenes": 50
+      },
+      "metrics": {
+        "RR": {
+          "aggregate_repeats": "pool_sse_not_average_images",
+          "elapsed_seconds": 74.21150535624474,
+          "free_raw_rmse": 0.019658937171260174,
+          "images_per_repeat": 400,
+          "nfe": 25,
+          "noise_seeds": [
+            1001,
+            1002
+          ],
+          "oracle_diagnostic_only": false,
+          "partition_metrics": {
+            "both": {
+              "pixels": 79776,
+              "rmse": 0.05968234051408653,
+              "sse": 284.16065762284035
+            },
+            "boundary_only": {
+              "pixels": 7315104,
+              "rmse": 0.033178823189600144,
+              "sse": 8052.71745159302
+            },
+            "building": {
+              "pixels": 12490240,
+              "rmse": 0.01761664337223131,
+              "sse": 3876.2975681374123
+            },
+            "core_free": {
+              "pixels": 37583072,
+              "rmse": 0.015795142759077282,
+              "sse": 9376.470399653397
+            },
+            "free": {
+              "pixels": 39938560,
+              "rmse": 0.019658937171260174,
+              "sse": 15435.207477212572
+            },
+            "protected_band": {
+              "pixels": 2355488,
+              "rmse": 0.05071665536360774,
+              "sse": 6058.737077559175
+            },
+            "rest": {
+              "pixels": 32093904,
+              "rmse": 0.014861127864342035,
+              "sse": 7088.03887632232
+            },
+            "tx_only": {
+              "pixels": 449776,
+              "rmse": 0.004783215237461357,
+              "sse": 10.290491674393365
+            }
+          },
+          "per_noise_raw_rmse": {
+            "1001": 0.01919064877145316,
+            "1002": 0.019193604524599412
+          },
+          "pixels": 52428800,
+          "raw_rmse": 0.019192126704927724,
+          "role": "val_select",
+          "sse": 19311.505045349986,
+          "test_evaluated": false
+        },
+        "original": {
+          "aggregate_repeats": "pool_sse_not_average_images",
+          "elapsed_seconds": 74.21467887237668,
+          "free_raw_rmse": 0.020262215631869376,
+          "images_per_repeat": 400,
+          "nfe": 25,
+          "noise_seeds": [
+            1001,
+            1002
+          ],
+          "oracle_diagnostic_only": false,
+          "partition_metrics": {
+            "both": {
+              "pixels": 79776,
+              "rmse": 0.059821817061697355,
+              "sse": 285.4903661706246
+            },
+            "boundary_only": {
+              "pixels": 7315104,
+              "rmse": 0.03373942551065706,
+              "sse": 8327.14010744654
+            },
+            "building": {
+              "pixels": 12490240,
+              "rmse": 0.017722372669885432,
+              "sse": 3922.9657179966052
+            },
+            "core_free": {
+              "pixels": 37583072,
+              "rmse": 0.016517956235534058,
+              "sse": 10254.27353604094
+            },
+            "free": {
+              "pixels": 39938560,
+              "rmse": 0.020262215631869376,
+              "sse": 16397.070646925597
+            },
+            "protected_band": {
+              "pixels": 2355488,
+              "rmse": 0.05106726953683888,
+              "sse": 6142.797110884657
+            },
+            "rest": {
+              "pixels": 32093904,
+              "rmse": 0.015562961067458409,
+              "sse": 7773.328319414147
+            },
+            "tx_only": {
+              "pixels": 449776,
+              "rmse": 0.004970443280683621,
+              "sse": 11.111853894286778
+            }
+          },
+          "per_noise_raw_rmse": {
+            "1001": 0.01970627703656271,
+            "1002": 0.01966749900076098
+          },
+          "pixels": 52428800,
+          "raw_rmse": 0.019686897566486866,
+          "role": "val_select",
+          "sse": 20320.0363649222,
+          "test_evaluated": false
+        }
+      },
+      "step": 1250
+    },
+    {
+      "RR_vs_original": {
+        "helpful_scenes": 45,
+        "per_noise_relative_sse_delta": {
+          "1001": -0.04005267224857124,
+          "1002": -0.03741117882656162
+        },
+        "relative_rmse_delta": -0.01955771080419666,
+        "relative_rmse_scene_bootstrap_95": [
+          -0.023136958397300567,
+          -0.015685870816160574
+        ],
+        "relative_sse_delta": -0.03873291755649273,
+        "scene_bootstrap_95": [
+          -0.04573859795072269,
+          -0.031125695089059862
+        ],
+        "scenes": 50
+      },
+      "metrics": {
+        "RR": {
+          "aggregate_repeats": "pool_sse_not_average_images",
+          "elapsed_seconds": 74.2491040751338,
+          "free_raw_rmse": 0.01971739905984573,
+          "images_per_repeat": 400,
+          "nfe": 25,
+          "noise_seeds": [
+            1001,
+            1002
+          ],
+          "oracle_diagnostic_only": false,
+          "partition_metrics": {
+            "both": {
+              "pixels": 79776,
+              "rmse": 0.05921951896436527,
+              "sse": 279.77055699015835
+            },
+            "boundary_only": {
+              "pixels": 7315104,
+              "rmse": 0.03327564672105632,
+              "sse": 8099.785438254885
+            },
+            "building": {
+              "pixels": 12490240,
+              "rmse": 0.017649916529687726,
+              "sse": 3890.953987969592
+            },
+            "core_free": {
+              "pixels": 37583072,
+              "rmse": 0.015851332804583364,
+              "sse": 9443.301253513975
+            },
+            "free": {
+              "pixels": 39938560,
+              "rmse": 0.01971739905984573,
+              "sse": 15527.14664067811
+            },
+            "protected_band": {
+              "pixels": 2355488,
+              "rmse": 0.050821635402818734,
+              "sse": 6083.845387164134
+            },
+            "rest": {
+              "pixels": 32093904,
+              "rmse": 0.014912963959815178,
+              "sse": 7137.571730514728
+            },
+            "tx_only": {
+              "pixels": 449776,
+              "rmse": 0.004719676211891318,
+              "sse": 10.018914918337648
+            }
+          },
+          "per_noise_raw_rmse": {
+            "1001": 0.019239027730878218,
+            "1002": 0.01925101466644898
+          },
+          "pixels": 52428800,
+          "raw_rmse": 0.019245022131934984,
+          "role": "val_select",
+          "sse": 19418.100628647702,
+          "test_evaluated": false
+        },
+        "original": {
+          "aggregate_repeats": "pool_sse_not_average_images",
+          "elapsed_seconds": 74.25778037961572,
+          "free_raw_rmse": 0.020186034257749966,
+          "images_per_repeat": 400,
+          "nfe": 25,
+          "noise_seeds": [
+            1001,
+            1002
+          ],
+          "oracle_diagnostic_only": false,
+          "partition_metrics": {
+            "both": {
+              "pixels": 79776,
+              "rmse": 0.05907368322362848,
+              "sse": 278.39431115733674
+            },
+            "boundary_only": {
+              "pixels": 7315104,
+              "rmse": 0.03370587134023512,
+              "sse": 8310.58550783413
+            },
+            "building": {
+              "pixels": 12490240,
+              "rmse": 0.01773040398937401,
+              "sse": 3926.522096208008
+            },
+            "core_free": {
+              "pixels": 37583072,
+              "rmse": 0.01641645540696778,
+              "sse": 10128.63820951135
+            },
+            "free": {
+              "pixels": 39938560,
+              "rmse": 0.020186034257749966,
+              "sse": 16274.003838049066
+            },
+            "protected_band": {
+              "pixels": 2355488,
+              "rmse": 0.05107794492399591,
+              "sse": 6145.365628537716
+            },
+            "rest": {
+              "pixels": 32093904,
+              "rmse": 0.01546334560204473,
+              "sse": 7674.13569099692
+            },
+            "tx_only": {
+              "pixels": 449776,
+              "rmse": 0.004920196637377908,
+              "sse": 10.888328060680289
+            }
+          },
+          "per_noise_raw_rmse": {
+            "1001": 0.019636289152091937,
+            "1002": 0.019621545779866835
+          },
+          "pixels": 52428800,
+          "raw_rmse": 0.019628918850206366,
+          "role": "val_select",
+          "sse": 20200.525934257075,
+          "test_evaluated": false
+        }
+      },
+      "step": 2500
+    },
+    {
+      "RR_vs_original": {
+        "helpful_scenes": 41,
+        "per_noise_relative_sse_delta": {
+          "1001": -0.033284096998213615,
+          "1002": -0.03060019727792069
+        },
+        "relative_rmse_delta": -0.016101353852890465,
+        "relative_rmse_scene_bootstrap_95": [
+          -0.01975263966044971,
+          -0.012335325419048693
+        ],
+        "relative_sse_delta": -0.031943454109884965,
+        "scene_bootstrap_95": [
+          -0.039115112547343865,
+          -0.024518490584903536
+        ],
+        "scenes": 50
+      },
+      "metrics": {
+        "RR": {
+          "aggregate_repeats": "pool_sse_not_average_images",
+          "elapsed_seconds": 74.3926346944645,
+          "free_raw_rmse": 0.019767554159916705,
+          "images_per_repeat": 400,
+          "nfe": 25,
+          "noise_seeds": [
+            1001,
+            1002
+          ],
+          "oracle_diagnostic_only": false,
+          "partition_metrics": {
+            "both": {
+              "pixels": 79776,
+              "rmse": 0.059482412584748526,
+              "sse": 282.26004529303384
+            },
+            "boundary_only": {
+              "pixels": 7315104,
+              "rmse": 0.03333534165839127,
+              "sse": 8128.8727699488245
+            },
+            "building": {
+              "pixels": 12490240,
+              "rmse": 0.017648280724754647,
+              "sse": 3890.2327894564423
+            },
+            "core_free": {
+              "pixels": 37583072,
+              "rmse": 0.0159056565913242,
+              "sse": 9508.138062979087
+            },
+            "free": {
+              "pixels": 39938560,
+              "rmse": 0.019767554159916705,
+              "sse": 15606.239837837342
+            },
+            "protected_band": {
+              "pixels": 2355488,
+              "rmse": 0.050881146200282466,
+              "sse": 6098.101774858255
+            },
+            "rest": {
+              "pixels": 32093904,
+              "rmse": 0.014962720813728899,
+              "sse": 7185.279963347776
+            },
+            "tx_only": {
+              "pixels": 449776,
+              "rmse": 0.004674268421810301,
+              "sse": 9.827059247707307
+            }
+          },
+          "per_noise_raw_rmse": {
+            "1001": 0.019279844031221575,
+            "1002": 0.01928779464683488
+          },
+          "pixels": 52428800,
+          "raw_rmse": 0.019283819748777763,
+          "role": "val_select",
+          "sse": 19496.472627293784,
+          "test_evaluated": false
+        },
+        "original": {
+          "aggregate_repeats": "pool_sse_not_average_images",
+          "elapsed_seconds": 74.3976029958576,
+          "free_raw_rmse": 0.020154050450023248,
+          "images_per_repeat": 400,
+          "nfe": 25,
+          "noise_seeds": [
+            1001,
+            1002
+          ],
+          "oracle_diagnostic_only": false,
+          "partition_metrics": {
+            "both": {
+              "pixels": 79776,
+              "rmse": 0.06003163991963632,
+              "sse": 287.49657260998714
+            },
+            "boundary_only": {
+              "pixels": 7315104,
+              "rmse": 0.033676161923593434,
+              "sse": 8295.941540852094
+            },
+            "building": {
+              "pixels": 12490240,
+              "rmse": 0.0177096465548064,
+              "sse": 3917.3337194705796
+            },
+            "core_free": {
+              "pixels": 37583072,
+              "rmse": 0.0163763490535868,
+              "sse": 10079.208960581416
+            },
+            "free": {
+              "pixels": 39938560,
+              "rmse": 0.020154050450023248,
+              "sse": 16222.473929231426
+            },
+            "protected_band": {
+              "pixels": 2355488,
+              "rmse": 0.05106921423428409,
+              "sse": 6143.26496865001
+            },
+            "rest": {
+              "pixels": 32093904,
+              "rmse": 0.015417165175299775,
+              "sse": 7628.367371528952
+            },
+            "tx_only": {
+              "pixels": 449776,
+              "rmse": 0.004870262917756183,
+              "sse": 10.66844424039301
+            }
+          },
+          "per_noise_raw_rmse": {
+            "1001": 0.019608938513760454,
+            "1002": 0.019589849974941922
+          },
+          "pixels": 52428800,
+          "raw_rmse": 0.0195993965682259,
+          "role": "val_select",
+          "sse": 20139.807648702008,
+          "test_evaluated": false
+        }
+      },
+      "step": 3750
+    },
+    {
+      "RR_vs_original": {
+        "helpful_scenes": 42,
+        "per_noise_relative_sse_delta": {
+          "1001": -0.030999899443886605,
+          "1002": -0.026477118895255565
+        },
+        "relative_rmse_delta": -0.014476812008026751,
+        "relative_rmse_scene_bootstrap_95": [
+          -0.018221266112986023,
+          -0.010449545934780202
+        ],
+        "relative_sse_delta": -0.02874404593013772,
+        "scene_bootstrap_95": [
+          -0.03611051768721179,
+          -0.020789898859317334
+        ],
+        "scenes": 50
+      },
+      "metrics": {
+        "RR": {
+          "aggregate_repeats": "pool_sse_not_average_images",
+          "elapsed_seconds": 74.28338181693107,
+          "free_raw_rmse": 0.019802317645430872,
+          "images_per_repeat": 400,
+          "nfe": 25,
+          "noise_seeds": [
+            1001,
+            1002
+          ],
+          "oracle_diagnostic_only": false,
+          "partition_metrics": {
+            "both": {
+              "pixels": 79776,
+              "rmse": 0.05949885095261483,
+              "sse": 282.4160758032293
+            },
+            "boundary_only": {
+              "pixels": 7315104,
+              "rmse": 0.03336441003975017,
+              "sse": 8143.055687274917
+            },
+            "building": {
+              "pixels": 12490240,
+              "rmse": 0.017638404460209915,
+              "sse": 3885.87993285025
+            },
+            "core_free": {
+              "pixels": 37583072,
+              "rmse": 0.01594171969859367,
+              "sse": 9551.302797973322
+            },
+            "free": {
+              "pixels": 39938560,
+              "rmse": 0.019802317645430872,
+              "sse": 15661.178788404737
+            },
+            "protected_band": {
+              "pixels": 2355488,
+              "rmse": 0.05093024317392181,
+              "sse": 6109.875990431416
+            },
+            "rest": {
+              "pixels": 32093904,
+              "rmse": 0.015005390804283893,
+              "sse": 7226.319691328691
+            },
+            "tx_only": {
+              "pixels": 449776,
+              "rmse": 0.004568493340584778,
+              "sse": 9.387333997901095
+            }
+          },
+          "per_noise_raw_rmse": {
+            "1001": 0.019309980039926376,
+            "1002": 0.019307661313775735
+          },
+          "pixels": 52428800,
+          "raw_rmse": 0.01930882071165698,
+          "role": "val_select",
+          "sse": 19547.058721254987,
+          "test_evaluated": false
+        },
+        "original": {
+          "aggregate_repeats": "pool_sse_not_average_images",
+          "elapsed_seconds": 74.27531266957521,
+          "free_raw_rmse": 0.02015634349705775,
+          "images_per_repeat": 400,
+          "nfe": 25,
+          "noise_seeds": [
+            1001,
+            1002
+          ],
+          "oracle_diagnostic_only": false,
+          "partition_metrics": {
+            "both": {
+              "pixels": 79776,
+              "rmse": 0.05979487976364555,
+              "sse": 285.2333158832137
+            },
+            "boundary_only": {
+              "pixels": 7315104,
+              "rmse": 0.03369672641477823,
+              "sse": 8306.07653820929
+            },
+            "building": {
+              "pixels": 12490240,
+              "rmse": 0.017669023359599835,
+              "sse": 3899.3828138139925
+            },
+            "core_free": {
+              "pixels": 37583072,
+              "rmse": 0.016363755080002863,
+              "sse": 10063.712407421983
+            },
+            "free": {
+              "pixels": 39938560,
+              "rmse": 0.02015634349705775,
+              "sse": 16226.16559528124
+            },
+            "protected_band": {
+              "pixels": 2355488,
+              "rmse": 0.051148908280143277,
+              "sse": 6162.453187859257
+            },
+            "rest": {
+              "pixels": 32093904,
+              "rmse": 0.015412972364274326,
+              "sse": 7624.218754935028
+            },
+            "tx_only": {
+              "pixels": 449776,
+              "rmse": 0.004863077157077618,
+              "sse": 10.636986253706961
+            }
+          },
+          "per_noise_raw_rmse": {
+            "1001": 0.019616427332939643,
+            "1002": 0.019568457362431253
+          },
+          "pixels": 52428800,
+          "raw_rmse": 0.01959245702883882,
+          "role": "val_select",
+          "sse": 20125.54840909523,
+          "test_evaluated": false
+        }
+      },
+      "step": 5000
+    }
+  ],
+  "parent_model_seed_not_replicated": true,
+  "parent_rmse": 0.01971660571769083,
+  "selected_step": 1250,
+  "selection_scope": "Best among evaluated development nodes; not final test",
+  "single_adaptation_seed": 43,
+  "source": "Original completed strong_rr_v1 experiment, not a new run of this packaged repository",
+  "test_evaluated": false
+}

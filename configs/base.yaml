@@ -1,0 +1,113 @@
+schema_version: reliable_geometry_v2
+model:
+  attention: false
+  channels:
+  - 64
+  - 128
+  - 256
+  - 256
+  - 512
+  cond_channels:
+  - 32
+  - 64
+  - 128
+  - 128
+  - 256
+  dropout: 0.0
+  preserve_tx_maxpool: true
+  res_blocks: 2
+  time_embedding: 512
+  time_features: 256
+reference:
+  distance: false
+  distance_sigma: 0.08
+  iterations: 16
+  los: false
+  mode: identity
+confidence:
+  alpha_file: null
+  mode: unit
+  native_prior: null
+  tau: null
+  time_bins: 10
+  upsample: bilinear
+risk:
+  min_valid_pixels: 16
+  positive_floor: 1.0e-08
+  region_size: 16
+geometry:
+  context_cache_max_entries: 64
+  los_features: false
+optimizer:
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  generator_global_grad_clip: 1.0
+  generator_weight_decay: 0.0001
+  risk_global_grad_clip: 5.0
+  risk_weight_decay: 0.0
+context: lagged_history_three_pass
+seed: 43
+adaptation_arm: RR
+experiment: rr_core
+data:
+  image_size: 256
+  tx_per_scene: 80
+  normalization: dataset_affine_01
+  encoding: uint8_div_255_no_threshold
+  augmentation: none
+  split_seed: 42
+  root: null
+  split_manifest: metadata/splits.json
+train:
+  effective_batch: 32
+  micro_batch: 8
+  precision: bf16
+  null_reference_prob: 0.1
+  history_nfe_choices:
+  - 10
+  - 25
+  - 50
+  base_lr: 1.0e-05
+  finetune_lr: 1.0e-05
+  finetune_warmup: 200
+  finetune_steps: 1250
+rr:
+  seed: 43
+  random_namespace: strong_rr_v1
+  cache_noise_seeds:
+  - 1003
+  - 1004
+  indices:
+  - 7
+  - 15
+  - 21
+  block_size: 1
+  auxiliary_weight: 1.0
+  learning_rate: 1.0e-05
+  warmup_steps: 200
+  ema_cap: 0.99
+  ema_copy_steps: 200
+  effective_batch: 32
+  micro_batch: 8
+  precision: bf16
+  noise_seeds:
+  - 1001
+  - 1002
+  nfe: 25
+  validation_every: 1250
+  checkpoint_every: 250
+  minimum_relative_improvement: 0.001
+  plateau_patience: 2
+  early_stop_patience: 2
+  lr_factor: 0.3333333333333333
+  max_lr_reductions: 1
+  parent_ema_sha256: 407aefc3944facdc0e3e4a8e92b36c156bbd52abb3ef4b2246c041f1ec619842
+  parent_rmse: 0.01971660571769083
+  default_steps: 1250
+  maximum_reported_steps: 5000
+protocol:
+  development_only: true
+  test_evaluated: false
+  automatic_followup: false

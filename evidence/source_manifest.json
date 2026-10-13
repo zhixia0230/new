@@ -1,0 +1,66 @@
+{
+  "best_rr_ema": {
+    "bytes": 129445011,
+    "filename": "ema_step_00001250.pt",
+    "included": false,
+    "sha256": "dec45239326bf9d469c6b327fbdd8f8704d02d92cb41f2900d2ea0e72b76a7ae",
+    "step": 1250
+  },
+  "core_objective_architecture_and_randomness_changed": false,
+  "draw_protocol_5000_hash": "b509210ae76a87932530bba22f727a5d3ef2f24183025bab78426562ada7223f",
+  "excluded": [
+    "dataset pixels",
+    "trajectory cache tensors",
+    "checkpoints",
+    "exploratory validation code/results"
+  ],
+  "experiment": "strong_rr_v1",
+  "old_checkpoints_supported_as_initialization_not_resume": true,
+  "parent": {
+    "ema_cap": 0.99,
+    "ema_sha256": "407aefc3944facdc0e3e4a8e92b36c156bbd52abb3ef4b2246c041f1ec619842",
+    "raw_rmse": 0.01971660571769083,
+    "split_hash": "12bf14229b65649a19cd56b054e60f30a44e08812a447396aabd95d6b517f19d",
+    "step": 13750,
+    "weights_sha256": "c571cb01bcbbf50109af872beb68afe71033b6626d467151fb21ba3e2bafcf72"
+  },
+  "port_changes": [
+    "Move unchanged coarse_velocity_sum into losses.py; change its import in strong_rr.py.",
+    "Remove unused experiment dispatcher.",
+    "Release-local implementation hash for new resume checkpoints.",
+    "Portable CLI replaces research drivers and their paths; new checkpoint namespace.",
+    "Keep device helpers without exploratory profiling dependencies."
+  ],
+  "source_project": "radiomap_project",
+  "source_sha256": {
+    "artifacts/strong_rr_v1/protocol.json": "15d36011ffc7e75653bb7d8e6918c28d7e4680f4e15058d11ec5f6cfd5c098a9",
+    "artifacts/strong_rr_v1/report.json": "d85ff2064b461c1f7d53b6eb1e48beb91a4a424dce9517c940c0ca5b060a0487",
+    "configs/strong_rr.yaml": "94c52a2908c877e4360fd13bce3ca17acc4ebbf4ecc41f46c451b103c8c6e7e3",
+    "radiomap/data/dataset.py": "40ccc5587bbc994c8d75fb02da59dae235ba106c82559a2b0008c3c79c962a71",
+    "radiomap/data/geometry.py": "14bf61c37b222a0b4bb0fd3e8adaf3b2a537ffc1737705531fb11fe77c140fb8",
+    "radiomap/evaluation/evaluate.py": "7eae698cc6208ae345b56029db8af30d5c57f80f93fd54809acc4f5fff4d0f03",
+    "radiomap/flow/path.py": "b7ce5a9481bde0520c64779085239991ca9e7c21f260d84fde564d7e3fd1dcba",
+    "radiomap/flow/solver.py": "b456c5f6383bc2e2760568f8e6e45073ec0a4142009d0d11f5e2d2022e3a0c74",
+    "radiomap/flow/time_sampler.py": "a05ceeeb3889e6f07ee92d9e71a2c1a0118817461c85c913c26005033cb5eefa",
+    "radiomap/models/backbone.py": "a5e9d4817b4cbde68b307db9d1985be7c9fae21cc46a17662d73b4ce7e2ee2fd",
+    "radiomap/models/condition_encoder.py": "c814587c4c72d8bfcca951c805e868bd37f2eb44eea65485ddd3a7d6a240554d",
+    "radiomap/models/risk_head.py": "0c62d5ef10d1d770c32a009cca1086ff06fd9134e42e934dde678f23e99260b8",
+    "radiomap/models/system.py": "bdaf52e50a04a2410357f864cb5c99338ba1f590f283d8d0d777269aa42cc4c0",
+    "radiomap/reference/operators.py": "a3143d91767c65eabff8f2963e4f7090fe569b3da1cf852e249feb0f3470ffe2",
+    "radiomap/training/losses.py": "b63d4b3a55cfde0a3cff72cc930f79f22d612047c840907225f75bb632907443",
+    "radiomap/training/strong_rr.py": "977bab6070123f3585a2a98a7a6f1897f9868ef6af18c15e15757497f02c1096",
+    "radiomap/training/trainers.py": "0700b005383e2cd19ec6fccd7c825d9c38059d0a90755b84e82302a0b11b8a15",
+    "radiomap/training/trajectory_lowfreq.py": "5f769762660e7214be28860ae520a61982c0722ee094bff902a9a45a2ec88ade",
+    "radiomap/utils/checkpoint.py": "360edd8f13d421073d4632d0d43d41302ba578e734ea5033044e74ff2092e7ec",
+    "radiomap/utils/config.py": "46477c922d369be39109fae5dfba280e930e54c6fd9b7a826ee4a3a48d8124ed",
+    "radiomap/utils/seed.py": "038f0b372fe62e105135e16d0fb470216c96178a9e29c8f5e104609f65fac951",
+    "runs/strong_rr_v1/RR/validation/step_00001250/per_sample.csv": "14f8fb48677d652f736072fb625f2d4abc686d79eeb835fd4dc4b4825c048af3",
+    "runs/strong_rr_v1/RR/validation/step_00005000/per_sample.csv": "ed1acb87acafa57b12b3592740a3c6ffc19cad0a62374bb999c1d1e78a958c83",
+    "runs/strong_rr_v1/original/validation/step_00001250/per_sample.csv": "2e1f4c8e4a4ce1ece11bea806e79b4ff3e507187a64bb1b9164a6e1767afd57c",
+    "runs/strong_rr_v1/original/validation/step_00005000/per_sample.csv": "5bee66e3a494d3925bafd78ee123c38999a863982903f00e930042a75af79e11",
+    "runs/strong_self_condition_v1/lr_3em05/validation/step_00013750/ema_0.99/per_sample.csv": "49749ddc1192d09ef58422f35a7ae15e9ba5d5bc67509e4d3dc64634cf8acbe1",
+    "scripts/run_strong_rr.py": "3a772ac4fdda07d3077c09eb4d72d06876670e7104e794857c7011b2cc850364",
+    "scripts/run_trajectory_coverage.py": "050353cde7a07b349abd2f7682cc011688a1bc2517c57131833eaa7cf1e13638",
+    "scripts/run_trajectory_lowfreq.py": "83de166ac4b94c3e60bbbe5cb7b7732f6a13bd2a77f3c736550fc7712893bb54"
+  }
+}
